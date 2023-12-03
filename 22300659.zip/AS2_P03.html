@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+    <style>
+       body{
+            background-color: aqua;
+            width: 200px;
+    } 
+    </style>
+</head>
+<body>
+    <script>
+        var n=prompt("명령 입력\n1:트리, 2:역트리, 3:왼쪽 삼각형, 4:오른쪽 삼각형");
+        if (n === '1') {document.body.style.textAlign = "center";
+            var tree = '';
+                for (var i = 1; i <= 10; i++) {
+                    for (var j = 0; j < i; j++) {
+                        tree += '*';
+                    }
+                    tree += '<br>'; 
+                }
+                document.write(tree);
+            }
+        else if (n === '2') {document.body.style.textAlign = "center";
+            var reverseTree = '';
+                for (var i = 10; i >= 1; i--) {
+                    for (var j = 0; j < i; j++) {
+                    reverseTree += '*';
+                    }
+                reverseTree += '<br>'; 
+                }
+            document.write(reverseTree); 
+            }
+        else if (n === '3') {
+            var lefttriangle = '';
+            for (var i = 1; i <= 10; i++) {
+                for (var j = 0; j < i; j++) {
+                    lefttriangle += '*';
+                    }
+                lefttriangle += '<br>'; 
+                }
+            document.write(lefttriangle); 
+            }
+        else if (n === '4') {
+            var rightTriangle = '';
+            for (var i = 1; i <= 10; i++) {
+                for (var j = 0; j < 10 - i; j++) {
+                    rightTriangle += '&nbsp;'; 
+                    }
+                for (var k = 0; k < i; k++) {
+                    rightTriangle += '*';
+                    }
+                rightTriangle += '<br>'; 
+                }
+            document.write(rightTriangle); 
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Images in One Line</title>
+    <link rel="stylesheet" type="text/css" href="마이css.css">
+    <style>
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+            position: fixed;
+            background-color: none;
+            font-size:30pt;
+            font-weight:bold;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            
+        }
+        li a:hover{
+            color: pink;    
+        }
+
+        body {
+            background-color:black;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 100px 100px 100px
+        }
+
+        .image-container img{
+            width: 150px;
+            height: 150px;
+            text-align: center;
+        }
+        .image-container img:hover{
+            transition: width 1.5s, height 1.5s;
+            width: 200px; 
+            height: 200px;
+        }
+        p{font-weight: bold; font-size: 14pt;color:pink; text-align: center;}
+        h1{font-weight: bold;font-size:40pt;color:pink; text-align: center;}
+        h2{font-weight: bold;font-size:20pt;color:pink; text-align: center;}
+        img a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            
+        }
+        div{text-align: center;}
+
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li><a href= "MainPage.html">감정처방전</a></li>
+        <li><a href= "#news">오늘의 질문</a></li>
+        <li><a href= "#contract">오늘의 다이어리</a></li>
+        <li><a href= "#about">오늘의 기록샷</a></li>-->
+    </ul>
+    <h1>Emotions</h1>
+
+    <div class="image-container">
+        <div>
+            <a href="기쁨/카테고리_기쁨.html">
+                <img src="../images/감정고르기/기쁜.png" alt="Image 1"></a>
+            <h2>"기쁨"</h2>
+            <p></p>
+        </div>
+        <div>
+            <a href="슬픔/카테고리_슬픔.html">
+                <img src="../images/감정고르기/슬픈.png" alt="Image 2"></a>
+            <h2>"슬픔"</h2>
+            <p></p>
+        </div>
+        <div>
+            <a href="분노/카테고리_분노.html">
+                <img src="../images/감정고르기/분노.png" alt="Image 3"></a>
+            <h2>"분노"</h2>
+            <p></p>
+        </div>
+        <div>
+            <a href="잔잔/카테고리_잔잔.html">
+                <img src="../images/감정고르기/잔잔.png" alt="Image 4"></a>
+            <h2>"잔잔"</h2>
+            <p></p>
+        </div>
+        <div>
+            <a href="신남/카테고리_신남.html">
+                <img src="../images/감정고르기/신남.png" alt="Image 5"></a>
+            <h2>"신난"</h2>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>

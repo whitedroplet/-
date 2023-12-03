@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 잔잔</title>
+
+    <style>
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+            position: fixed;
+            background-color: none;
+            font-size:30pt;
+            font-weight:bold;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            
+        }
+        li a:hover{
+            color: pink;    
+        }
+
+        body {
+            background-color:black;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 200px 50px 200px;
+        }
+
+        .image-container img{
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        .paragraph{
+            width: 300px;
+            height: 200px;
+            background-color: none;
+            text-align: left;
+            border: dotted #CCBBDD;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .paragraph p{
+            padding:10px 15px;
+        }
+        p{font-weight:lighter; font-size: 13pt;color:pink; text-align: left;}
+        h1{font-weight: bold;font-size:40pt;color:pink; text-align: center;}
+        h2{font-weight: bold;font-size:20pt;color:white; text-align: left; padding-left: 100px;padding-top: 50px;}
+        h3{font-weight: bold;font-size:20pt;color:white; text-align: left; padding-left: 100px;}
+        #quote{padding-left: 100px;padding-right: 100px;font-weight: bold;font-size: 20pt;}
+        .image-box {
+            text-align: center;
+            width: 300px;
+            height:400px;
+            overflow: hidden;
+            background-color: none;
+            border-radius: 20px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li><a href= "../MainPage.html">감정처방전</a></li>
+    </ul>
+    <h1>Movies</h1>
+    <h2></h2>
+    <h3>*Peace Zone</h3>
+    <p id="quote">
+        "영화는 젊은이들의 삶을 형성하는 데 엄청난 영향을 미칠 수 있고 또 그렇게 한다." - 월트 디즈니</p>
+    <div class="image-container">
+        <div>
+            <div class="image-box">
+                <img src="../../images/영화/리틀포레스트.jpg" alt="Artwork 1">
+            </div>  
+            <div class="paragraph">
+                <p>#잔잔한<br><br>
+                -리틀포레스트-<br>
+            "그렇게 바쁘게 산다고 문제가 해결이 돼?"</p> 
+            </div>
+        </div>
+        <div>
+            <div class="image-box">
+                <img src="../../images/영화/비긴어게인.jpg" alt="Artwork 2">
+            </div>
+            <div class="paragraph">
+                <p>#힐링<br><br>
+                -비긴어게인-<br>
+            "난 이래서 음악이 좋아　지극히 따분한 일상의 순간까지도 의미를 갖게 되잖아　이런 평범함도 어느 순간 갑자기 진주처럼 아름답게 빛나거든　그게 바로 음악이야"</p> 
+            </div>
+        </div>
+        <div>
+            <div class="image-box">
+                <img src="../../images/영화/어바웃타임.jpg" alt="Artwork 3">
+            </div>
+            <div class="paragraph">
+                <p>#따뜻한<br><br>
+                -어바웃타임-<br>
+            "인생은 모두가 함께 하는 여행이다. 매일매일 사는동안...우리가 할수 있는건 최선을 다해 이 멋진 여행을 만끽하는것이다"</p> 
+            </div>
+        </div>
+    </div>
+    <div class="image-container">
+        <div>
+            <div class="image-box">
+                <img src="../../images/영화/업.jpg" alt="Artwork 1">
+            </div>
+            <div class="paragraph">
+                <p>#감동적인<br><br>
+                -업-<br>
+            "이제 당신의 여행을 떠나세요."</p> 
+            </div>
+        </div>
+        <div>
+            <div class="image-box">
+                <img src="../../images/영화/인턴.jpg" alt="Artwork 2">
+            </div>
+            <div class="paragraph">
+                <p>#일상<br><br>
+                -인턴-<br>
+            "길은 모두에게 열려있지만 모두가 그 길을 가질 수 있는 건 아니다."</p> 
+            </div>
+        </div>
+        <div>
+            <div class="image-box">
+                <img src="../../images/영화/20세기 소녀.jpg" alt="Artwork 3">
+            </div>
+            <div class="paragraph">
+                <p>#풋풋한<br><br>
+                -20세기 소녀-<br>
+            "너에게 가장 먼저 내 마음을 말할 수 있어서 기뻐. 어쩌면 우정과 사랑은 닮아있는 지도 모르겠어."</p> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

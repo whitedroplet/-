@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타벅스</title>
+</head>
+<body>
+    <h1>스타버즈 커피공장</h1>
+    <h2>양식을 채운 후 "주문"을 버튼을 클릭하세요</h2>
+
+    <form action="http://starbuzzcoffee.com/processorder.php" method="post">
+        <p>
+            커피 선택:
+            <select name="beans">
+                <option value="House Blend">House Blend</option>
+                <option value="Bolivia">Shade Grown Bolivia supremo</option>
+                <option value="Guatemala">Organic Guatemala</option>
+                <option value="Kenya">Kenya</option>
+            </select>
+            </p>
+            <p>
+            Type:<br>
+            <input type="radio" name="beantype" value="whole">
+            분쇄하지 않은 커피
+            <br>
+            <input type="radio" name="beantype" value="ground" checked>
+            분쇄한 커피
+        </p>
+        <p>
+            상품 개수: <input type = "number" name="bags" min="1" max="10">
+        </p>
+        <p>
+            배송 일자: <input type="date" name="date">
+        </p>
+        <p>
+            기타:<br>
+            <input type="checkbox" name="extras[]" value="giftwrap">
+            선물 포장
+            <br>
+            <input type="checkbox" name="extras[]" value="catalog" checked>
+            카탈로그 포함
+        </p>
+        <p>
+            배송지 주소:<br>
+            이름:
+            <input type="text" name="name" value=""><br>
+            주소:
+            <input type="text" name="adress" value=""><br>
+            도시:
+            <input type="text" name="city" value=""><br>
+            지역:
+            <input type="text" name="state" value=""><br>
+            우편번호:
+            <input type="text" name="zip" value=""><br>
+            전화번호:
+            <input type="text" name="phone" value=""><br> 
+        </p>
+        <p>
+            고객 요구사항:<br>
+            <textarea name="comments"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="주문">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1= window.prompt("첫번째 수 입력:");
+        var op= window.prompt(" 사칙연산 중 하나 입력:");
+        var num2= window.prompt("두번쨰 수 입력");
+        if(op=="+")
+        result= num1+num2;
+        else if(op=="-")
+        result=num1-num2;
+        else if(op=="*")
+        result=num1*num2;
+        else if(op=="/")
+        result=num1/num2;
+    else
+    result= "지원하지 않는 연산자 입니다."
+alert(num1+op+num2+"="+result);
+    </script>
+</body>
+</html>

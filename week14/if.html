@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tem2{color:red}
+        #tem1{color:blue}
+        #equal{color:green}
+    </style>
+</head>
+<body>
+    <h1 id=""calc></h1>
+    <script>
+        var num1=prompt('first number');
+        var num2=prompt('second number');
+
+        if(num1<num2){
+            document.getElementById('calc').innerHTML ="<span id='tem2'>"+num2+"-"+num1+"="+(num2-num1)+"</span>";
+        }else if(num2<num1){
+            document.getElementById('calc').innerHTML ="<span id='tem1'>"+num1+"-"+num2+"="+(num1-num2)+"</span>";
+        }else {
+            document.getElementById('calc').innerHTML ="<span id='equal'>두 수가 같습니다.</span>";
+
+        }
+    </script>
+</body>
+</html>

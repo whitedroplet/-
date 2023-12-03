@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+</head>
+<body>
+    <h1>회원가입 폼</h1>
+    <div style="width:500px; background-color:antiquewhite; padding:15px;">
+    <fieldset style="width:470px;">
+        <p>
+        아이디<br>
+        <input type="text" name="id">
+        <br>
+        </p>
+        <p>
+        비밀번호<br>
+        <input type="password" name="pwd">
+        <br>
+        </p>
+    </fieldset>
+    <p style="margin-left:15px;">
+        이름<br>
+        <input type="text" name="name"><br>
+    </p>
+    <p style="margin-left:15px;">
+        성별<br>
+        <input type="radio" name="gender" value="남성">남성
+        <input type="radio" name="gender" value="여성">여성
+    </p>
+    <p style="margin-left:15px;">
+        학년<br>
+        <input type="radio" name="grade" value="1학년" checked>1학년
+        <input type="radio" name="grade" value="2학년">2학년
+        <input type="radio" name="grade" value="3학년">3학년
+        <input type="radio" name="grade" value="4학년">4학년
+    </p>
+    <p style="margin-left:15px;">
+        생년월일<br>
+        <input type="date" name="date">
+    </p>
+    <p style="margin-left:15px;">
+        전화번호<br>
+        <input type="tel" name="phone" value="">
+    </p>
+    <p style="margin-left:15px;">
+        이메일<br>
+        <input type="text" name="mail" value="">@
+        <select name="email">
+            <option value="선택하세요">선택하세요 </option>
+            <option value="naver.com">Naver.com</option>
+            <option value="Daum.net">Daum.net</option>
+        </select>
+    </p>
+    <p style="margin-left:15px;">
+        자기소개<br>
+        <textarea name="comments" style="width: 350px; height: 80px;"></textarea> 
+    </p>
+    <p style="margin-left:15px;">
+        <input type="Submit" value="Submit">
+    </p>
+</div>
+</body>
+</html>

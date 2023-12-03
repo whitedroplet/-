@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swich case</title>
+    <script>
+    function selectSeason(){
+        var temDate=document.getElementById('date').value;
+        var objDate=new Date(temDate);
+        var month=objDate.getMonth()+1;
+        var season=""
+
+        switch (month) {
+                case 12:
+                case 1:
+                case 2:
+                    season = "겨울";
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    season = "봄";
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    season = "여름";
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    season = "가을";
+                    break;
+                default:
+                    season = "계절을 판단할 수 없습니다.";
+                    break;
+            }
+
+            document.getElementById("season").innerText = season;
+        }
+    </script>
+</head>
+<body>
+    <h1>계절 표현하기</h1>
+    <form>
+        <fieldset style="width:300px">
+        <legend>달력 입력</legend>
+    <input type="date" name="" id="date" onchange="selectSeason()">
+</fieldset>
+<p>
+    <label for="season">
+        당신의 계절은?
+    </label>
+    <h3 id="season"></h3>
+</p>
+    </form>
+</body>
+</html>

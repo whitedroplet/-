@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리 슬픔</title>
+    <style>
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+            position: fixed;
+            background-color: none;
+            font-size:30pt;
+            font-weight:bold;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            
+        }
+        li a:hover{
+            color: pink;    
+        }
+
+        body {
+            background-color:black;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 100px 100px 100px
+        }
+
+        .image-container img{
+            width: 300px;
+            height: 300px;
+        }
+        .image-container img:hover{
+            transition: width 2s, height 2s;
+            width: 350px; 
+            height: 350px;
+        }
+        p{font-weight: bold; font-size: 20pt;color:pink; text-align: center;}
+        h1{font-weight: bold;font-size:40pt;color:pink; text-align: center;}
+        img a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            
+        }
+
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li><a href= "../MainPage.html">감정처방전</a></li>
+    </ul>
+    <h1>Categories</h1>
+
+    <div class="image-container">
+        <div>
+            <a href="영화_슬픔.html">
+                <img src="../images/MainPage/astronauts.png" alt="Image 1"></a>
+            <p>"영화 처방전"</p>
+        </div>
+        <div>
+            <a href="음악_슬픔.html">
+                <img src="../images/MainPage/astronauts.png" alt="Image 2"></a>
+            <p>"음악 처방전"</p>
+        </div>
+        <div>
+            <a href="여행지_슬픔.html">
+                <img src="../images/MainPage/astronauts.png" alt="Image 3"></a>
+            <p>"여행지 처방전"</p>
+        </div>
+        <div>
+            <a href="해볼것_슬픔.html">
+                <img src="../images/MainPage/astronauts.png" alt="Image 4"></a>
+            <p>"해볼 것 처방전"</p>
+        </div>
+    </div>
+</body>
+</html>

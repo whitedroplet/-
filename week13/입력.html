@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var result=0;
+        var i=1;
+        while(true){
+            var value=window.prompt(i+"번째 입력");
+            if(value=='end'){
+                alert("입력이 종료되었습니다");
+                break;
+            }
+            result+=parseInt(value);
+            document.write("현재 합은"+result,"<br>");
+            i++;
+        }
+    </script>
+</body>
+</html>

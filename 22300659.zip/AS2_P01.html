@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Check</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Grades</h1>
+    <label for="korean">Korean:</label>
+    <input type="number" id="korean" onchange="updateAverage();"><br>
+
+    <label for="english">English:</label>
+    <input type="number" id="english" onchange="updateAverage();"><br>
+
+    <label for="korean">math:</label>
+    <input type="number" id="math" onchange="updateAverage();"><br>
+
+    <label for="average">Average:</label>
+    <input type="number" id="ave" value="" readonly="readonly"/><br>
+
+    <button onclick="checkGrades()">Check Grades</button>
+    <script>
+       function updateAverage() {
+            var korean = parseFloat(document.getElementById('korean').value);
+            var english = parseFloat(document.getElementById('english').value);
+            var math = parseFloat(document.getElementById('math').value);
+
+            var average = (korean + english + math) / 3;
+            document.getElementById('ave').value = average.toFixed(2);
+        }
+        function checkGrades() {
+            var korean = parseFloat(document.getElementById('korean').value);
+            var english = parseFloat(document.getElementById('english').value);
+            var math = parseFloat(document.getElementById('math').value);
+
+            var average = (korean + english + math) / 3;
+
+            if (average >= 70) {
+                alert("합격입니다!!");
+            }
+            else if (korean < 40 || english < 40 || math < 40) {
+                alert("낙제입니다!!");
+        }
+    }
+    </script>
+</body>
+</html>
